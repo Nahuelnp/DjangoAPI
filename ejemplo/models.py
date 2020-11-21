@@ -9,6 +9,7 @@ class Task(models.Model):
     text = models.TextField(max_length=200)
     done = models.BooleanField()
     deleted = models.BooleanField()
+    created_date = models.DateTimeField(default=timezone.now)
 
 
 
